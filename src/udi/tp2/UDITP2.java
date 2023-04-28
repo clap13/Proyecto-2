@@ -44,7 +44,9 @@ public class UDITP2 {
                     System.out.println("\nEl áres del rectángulo es de " + UDITP2.areaRecta(val1, val2) + "\n");
                     break;
                 case 3:
-
+                    System.out.println("Ingrese el redio");
+                    double radio = escan.nextInt();
+                    System.out.println("\nEl áres del círculo es de " + UDITP2.areaCir(radio) + "\n");
                     break;
                 case 4:
                     System.out.println("Adios");
@@ -69,4 +71,9 @@ public class UDITP2 {
         return areaR;
     }
 
+   public static double areaCir(double radio) {
+        double areaC = 0;
+        areaC = Math.PI * radio * radio;
+        return areaC;
+    }
 }
